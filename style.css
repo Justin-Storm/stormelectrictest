@@ -1,0 +1,249 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    font-weight: bold;
+}
+
+.page-section {
+    scroll-margin-top: 80px;
+}
+
+.navbar {
+    transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.navbar a {
+    text-shadow: 2px 2px 30px black;
+    transition: text-shadow 0.25s ease;
+}
+
+.navbar.scrolled {
+    background: #212529;
+    box-shadow: 0 1px 25px rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        background: #212529;
+        box-shadow: 0 1px 25px rgba(255, 255, 255, 0.5);
+    }
+    div.page {
+        transform: translateY(80px);
+    }
+}
+
+.navbar.scrolled a {
+    color: white;
+    text-shadow: none;
+}
+
+.offcanvas {
+    background: #212529;
+}
+
+.offcanvas a.close i {
+    font-size: 40px;
+    color: white;
+}
+
+.offcanvas a.close {
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    line-height: 50px;
+    transition: background-color 0.2s ease;
+}
+.offcanvas a.close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+header.masthead {
+    background: url("https://img1.wsimg.com/isteam/ip/d6b0151d-0d06-48f0-b90b-36a1885e3509/IMG_0678.JPG/:/rs=w:1023,m");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+}
+
+@media (min-width: 768px) {
+    header.masthead {
+        height: 100vh;
+    }
+}
+
+header.masthead h1 {
+    text-shadow: 2px 2px 10px black;
+}
+
+header.masthead hr {
+    background: linear-gradient(to right, blue, darkblue);
+    border: none;
+    opacity: 1;
+    width: 3rem;
+    height: 4px;
+    border-radius: 10px;
+}
+
+#about {
+    background: #f8f8f8;
+}
+
+#about hr {
+    background: linear-gradient(to right, blue, darkblue);
+    border: none;
+    opacity: 1;
+    width: 3rem;
+    height: 4px;
+    border-radius: 10px;
+}
+
+#about i {
+    font-size: 50px;
+    background: linear-gradient(to right, blue, darkblue);
+    background-clip: text;
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+}
+
+#services {
+    background: #f8f8f8;
+}
+
+#services hr {
+    background: linear-gradient(to right, blue, darkblue);
+    border: none;
+    opacity: 1;
+    width: 3rem;
+    height: 4px;
+    border-radius: 10px;
+}
+
+#services .services-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#services .services-row .item {
+    padding: 20px;
+    width: 400px;
+    background: linear-gradient(to right, blue, darkblue);
+    border: 3px solid black;
+    border-radius: 30px;
+    min-height: 120px;
+}
+
+#services .services-row .item h3 a {
+    height: 40px;
+    width: 40px;
+    background: white;
+    color: blue;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.footer .container .row .card {
+    border-bottom: 5px solid blue;
+    transition: 0.3s;
+}
+
+.footer .container .row .card .card-body i {
+    background: linear-gradient(to right, blue, darkblue);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+.footer .container .row .card .card-body hr {
+    background: linear-gradient(to right, blue, darkblue);
+    border: none;
+    opacity: 1;
+    width: 3rem;
+    height: 4px;
+    border-radius: 10px;
+}
+
+.footer .container .row .card .card-body a {
+    display: inline-block;
+    background: linear-gradient(to right, blue, darkblue);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 992px) {
+    .footer .container .row .card .card-body a.email {
+        font-size: 11px;
+    }
+}
+@media (max-width: 768px) {
+    .footer .container .row .card .card-body a.email {
+        font-size: 14px;
+    }
+}
+
+a.contact-link {
+    position: fixed;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    background: #cacaca;
+    border-radius: 50%;
+    bottom: 15px;
+    right: 15px;
+}
+
+a.contact-link i {
+    font-size: 35px;
+    color: black;
+}
+
+form .row .col-12 input, 
+form .row .col-12 textarea {
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    box-shadow: none;
+    color: #000;
+    font-weight: 500;
+}
+
+form .row .col-12 label {
+    font-weight: 500;
+    color: black;
+}
+
+form .row .col-12 label::after {
+    background: none;
+    color: black;
+    font-weight: 500;
+}
+
+form .row .col-12 textarea {
+    height: 10rem;
+}
+
+form .row .col-12 textarea::placeholder,
+form .row .col-12 textarea {
+    color: black;
+    font-weight: 500;
+}
+
+form .row button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(to right, blue, darkblue);
+}

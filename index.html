@@ -51,7 +51,7 @@
         <div class="row align-items-center justify-content-center h-100 text-center">
             <div class="col-lg-8 align-self-end">
                 <h1 class="text-white fw-bold">Welcome to Storm Electric!</h1>
-                <hr class="mx-auto my-4">
+                <hr class="mx-auto my-5">
             </div>
             <div class="col-lg-8 align-self-baseline">
                 <a class="btn btn-primary rounded-pill text-white text-center fw-bold" href="#about">Learn More</a>             
@@ -89,7 +89,8 @@
     <div class="container-fluid py-5">
         <h1 class="text-black text-center">Services</h1>
         <hr class="mx-auto my-5">
-        <div class="services-row text-white">
+        <div class="services-row text-dark">
+            <div class="item-padding">
             <div class="item item1">
                 <h3 class="d-flex">Commercial Services<br>Offered
                     <a type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" class="ms-auto my-auto" id="toggleButton1">
@@ -111,6 +112,8 @@
                     <li>Landscape lighting</li>
                 </ul>
             </div>
+            </div>
+            <div class="item-padding">
             <div class="item item2">
                 <h3 class="d-flex">Full Service Residential<br>Electrical Contactor
                     <a type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" class="ms-auto my-auto" id="toggleButton2">
@@ -134,6 +137,8 @@
                     <p>10% Off For Senior Clients</p>
                 </ul>
             </div>
+            </div>
+            <div class="item-padding">
             <div class="item item3">
                 <h3 class="d-flex">Warranty
                     <a type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" class="ms-auto" id="toggleButton3">
@@ -141,6 +146,7 @@
                     </a>
                 </h3>
                 <p id="collapse3" class="collapse mt-4">We place warrenties on all of our work for 1 year from date of installation.</p>
+            </div>
             </div>
         </div>
     </div>
@@ -273,6 +279,8 @@ function formSubmit() {
     document.getElementById('contact-form').style.display = "none";
     document.getElementById('form-top-text').innerHTML = "Form submitted!";
 }
+
+
 
 
 </script>

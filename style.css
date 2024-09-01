@@ -130,23 +130,28 @@ header.masthead hr {
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
+}
+
+#services .services-row .item-padding {
+    padding: 5px;
+    background: blue;
+    border-radius: 25px;
 }
 
 #services .services-row .item {
     padding: 20px;
     width: 400px;
-    background: linear-gradient(to right, blue, darkblue);
-    border: 3px solid black;
-    border-radius: 30px;
+    background: #f8f8f8;
+    border-radius: 25px;
     min-height: 120px;
 }
 
 #services .services-row .item h3 a {
     height: 40px;
     width: 40px;
-    background: white;
-    color: blue;
+    background: #212529;
+    color: #fff;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
@@ -220,14 +225,12 @@ form .row .col-12 textarea {
 }
 
 form .row .col-12 label {
-    font-weight: 500;
-    color: black;
+    font-weight: normal !important;
+    color: black !important;
 }
 
 form .row .col-12 label::after {
-    background: none;
-    color: black;
-    font-weight: 500;
+    background: transparent !important;
 }
 
 form .row .col-12 textarea {
